@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  gather_facts: true
+  tasks:
+    - name: Remove tree command
+      ansible.builtin.yum:
+        name: tree
+        state: absent
