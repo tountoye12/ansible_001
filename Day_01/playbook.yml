@@ -1,0 +1,10 @@
+- name: My first Play
+  hosts: all
+  gather_facts: yes
+  tasks:
+   - name: Ping all my Vms
+     ping:
+   - name: Pring message
+     debug:
+      msg: "Hello All"
+  

@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: yes
+  name: 
+  tasks:
+   - name: Install Package vim and tree
+     yum:
+       name: "{{ item }}"
+       state: present
+     loop:
+      - vim
+      - tree

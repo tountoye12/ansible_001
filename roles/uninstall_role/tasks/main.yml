@@ -1,0 +1,10 @@
+#---
+# tasks file for uninstall_role
+---
+- name: Remove Package vim and tree
+  dnf:
+    name: "{{ item }}"
+    state: absent
+  loop:
+    - vim
+    - tree
