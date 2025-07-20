@@ -1,0 +1,40 @@
+---
+- name: Create Users
+  hosts: all
+  gather_facts: yes
+  tasks:
+   - name: Include users list
+     include_vars: ./data/users.yml
+   
+   - name: Debug groups variable
+     debug:
+       var: group_list   
+   - name: create groups
+     group:
+       name: "{{ item }}"
+       state: present
+     with_items: "{{ group_list | list }}"
+
+   - name: create Admins
+     user:
+      name: "{{ item }}"
+      group: wheel
+      state: present
+     with_items: "{{ admins | list }}"
+
+   - name: create developers users
+     user:
+       name: "{{ item }}"
+       group: devGroup
+       state: present
+     with_items: "{{ developers | list }}"
+
+   - name: create accounting users
+     user:
+       name: "{{ item }}"
+       group: accountingGroup
+       state: present
+     with_items: "{{ accountings | list }}"
+
+
+

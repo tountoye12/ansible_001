@@ -1,0 +1,15 @@
+developers:
+  - dev1
+  - dev2
+  - dev3
+admins:
+  - admin1
+  - admin2
+
+accountings: 
+  - accounting1
+  - accounting2
+
+group_list:
+  - devGroup
+  - accountingGroup
