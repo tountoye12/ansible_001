@@ -1,0 +1,9 @@
+---
+ - name: Gatther and print all local facts
+   hosts: all
+   become: yes
+   gather_facts: yes
+   tasks:
+    - name: Print all facts 
+      debug:
+       var: ansible_facts
