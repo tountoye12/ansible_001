@@ -6,4 +6,8 @@
     - name: Remove tree command
       ansible.builtin.yum:
         name: tree
-        state: absent
+        state: absente
+    - name: Install tree command
+      dnf: 
+       name: tree]
+       state: present

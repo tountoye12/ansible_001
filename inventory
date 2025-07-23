@@ -1,4 +1,0 @@
-[node1]
-192.168.122.87 ansible_user=root ansible_python_interpreter=/usr/bin/python3.9
-[node2]
-192.168.122.29 ansible_user=root ansible_python_interpreter=/usr/bin/python3.9

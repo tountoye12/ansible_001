@@ -1,0 +1,6 @@
+---
+- hosts: all
+  gather_facts: yes
+  roles:
+   - install_nginx_role
+   - remove_nginx_role

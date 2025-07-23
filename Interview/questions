@@ -1,0 +1,14 @@
+How to solve the problem when / is full ? { df -hT or du /  } remove old logs
+How to interpret the load average?
+How to delete the log files older than 7 days?
+which backup tools do you use and recovery strategy? { commvault, Bacula, Amanda }
+
+
+host ip: 172.17.8.1/16, no getway:  ping here?
+
+vm1 ip: 172.16.8.1/16
+vm2 ip: 172.17.255.1/16
+vm3 ip: 172.17.80.1/16
+
+Next study: { smtp, samba, patching, } 
+

@@ -1,0 +1,6 @@
+---
+# tasks file for remove_nginx_role
+- name: Remove Nginx server
+  ansible.builtin.dnf:
+   name: nginx 
+   state: absent
